@@ -10,28 +10,24 @@
 </head>
 
 <body>
-
     <main>
-
         <section>
             <h1>Border Radius Previewer</h1>
-
             <div class="top">
-                <input type="text" data-position='top-left' value="0" placeholder="px">
-                <input type="text" data-position='top-right' value="0" placeholder="px">
+                <input type="number" data-position='top-left' value="0" placeholder="px">
+                <input type="number" data-position='top-right' value="0" placeholder="px">
             </div>
 
             <div id="Previewer"></div>
 
             <div class="bottom">
-                <input type="text" data-position='bottom-left' value="0" placeholder="px">
-                <input type="text" data-position='bottom-right' value="0" placeholder="px">
+                <input type="number" data-position='bottom-left' value="0" placeholder="px">
+                <input type="number" data-position='bottom-right' value="0" placeholder="px">
             </div>
 
-            <pre>border-radius: 0px 0px 0px 0px</pre>
-            <button>copy</button>
+            <input type="text" value="border-radius: 0px 0px 0px 0px" class="code" readonly>
+            <button onclick="clipboard()">copy</button>
         </section>
-
     </main>
 
     <script src="js/index.js"></script>
